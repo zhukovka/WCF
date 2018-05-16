@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BinaryConverterAndroid"
+             x:Class="BinaryConverterAndroid.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            
+            <On Platform="Android" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Label Text="Welcome to Binary Converter!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Entry x:Name="addr" Placeholder="Enter a address" />
+        <Entry x:Name="input" Placeholder="Enter a number" />
+        <Button x:Name="calcButon" Text="Calculate" Clicked="OnCalculate" />
+        <Label x:Name="output" />
+    </StackLayout>
+</ContentPage>

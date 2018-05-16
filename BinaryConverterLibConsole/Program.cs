@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,11 +15,13 @@ namespace BinaryConverterLibConsole
             try
             {
                 BinaryConverterLib.BinaryConverterLib lib = new BinaryConverterLib.BinaryConverterLib();
-                string addr = "192.168.1.106";
+                string myIP = lib.getMyIP();
+                Console.WriteLine("Your IP Address is :" + myIP);
+
                 Console.Write("Enter a number: ");
                 string n = Console.ReadLine();
                 int m = Int32.Parse(n);
-                string res = lib.RequestToBinaryConverter(addr, m);
+                string res = lib.RequestToBinaryConverter(myIP, m);
                 Console.WriteLine($"Binary of {m} is: {res}");
                 Console.ReadKey();
             }

@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +36,13 @@ namespace BinaryConverterLib
                 response = ex.ToString();
             }
             return response;
+        }
+
+        public string getMyIP()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+
+            return host.AddressList.FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork).ToString();
         }
     }
 }
