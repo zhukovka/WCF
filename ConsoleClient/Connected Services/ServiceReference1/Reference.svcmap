@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1cbf1435-7b53-4b0d-9a6c-9ab99ebfd133" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/BinaryConverterService/service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="3ec38400-307a-44c1-bb54-bf2a9e78ef0c" SourceId="1" SourceUrl="http://localhost:8000/BinaryConverterService/service?xsd=xsd1" />
+    <MetadataFile FileName="BinaryConverterService.wsdl" MetadataType="Wsdl" ID="fb192aa6-3d75-4239-97ec-3abc3c5c6a30" SourceId="1" SourceUrl="http://localhost:8000/BinaryConverterService/service?wsdl" />
+    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="65b763f0-774e-44ab-b5f3-4795c1a79fee" SourceId="1" SourceUrl="http://localhost:8000/BinaryConverterService/service?disco" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="7a4ff215-765f-4ee2-8041-d937fb1025d8" SourceId="1" SourceUrl="http://localhost:8000/BinaryConverterService/service?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
